@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coax TEST</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<script src="canvas.js"></script>
+	<script src="javascript.js"></script>
+</head>
+<body>
+
+	<canvas></canvas>
+	<form>
+		
+		<p style="color:#008000;">Insert departure coordinates (0.0 &#60= value &#60= 10.0)</p>
+		<input type="text" name="departureX" placeholder="departureX">
+		<input type="text" name="departureY" placeholder="departureY" required><br>
+		<p style="color:#ff0000;">Insert destination coordinates (0.0 &#60= value &#60= 10.0)</p>
+		<input type="text" name="destinationX" placeholder="destinationX" required>
+		<input type="text" name="destinationY" placeholder="destinationY" required><br>
+		<input class="form-submit" type="button" name="submit" value="Submit" onclick="formValidation()">
+	</form>
+	<h1 id="result"></h1>
+		
+</body>
+</html>
